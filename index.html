@@ -13,48 +13,81 @@
         <fieldset class="blue">
             <legend class="blue">Votre identité</legend>
             <ol>
-                <li>Nom:<input type="text" placeholder="Nom"></li>
-                <li>Prénom:<input type="text" placeholder="Prénom"></li>
-                <li>Adresse mail:<input type="text" placeholder="Adresse mail"></li>
+                <li>
+                    <label for="inputName">Nom:</label>
+                    <input type="text" placeholder="Nom" id="inputName" name="name" required>
+                </li>
+                <li>
+                    <label for="inputFirstname">Prénom:</label>
+                    <input type="text" placeholder="Prénom" id="inputFirstName" name="firstName" required>
+                </li>
+                <li>
+                    <label for="inputMail">Adresse mail:</label>
+                    <input type="email" placeholder="Adresse mail" id="inputMail" name="mail" required>
+                </li>
 
             </ol>
 
 
         </fieldset>
-    </form>
-    <form>
+
+
         <fieldset class="purple">
             <legend class="purple">Adresse de livraison</legend>
             <ol>
-                <li>Adresse:<textarea rows="5" cols="20"></textarea></li>
-                <li>Code Postal:<input type="text" placeholder="Code Postal"></li>
-                <li>ville:<input type="text" placeholder="ville"></li>
+                <li>
+                    <label for="inputAddress">Adresse:</label>
+                    <textarea rows="5" cols="20" id="inputAddress" name="address"></textarea>
+                </li>
+                <li>
+                    <label for="inputZipCode">Code postal:</label>
+                    <input type="text" placeholder="Code Postal" id="inputZipCode" name="zipCode">
+                </li>
+                <li>
+                    <label for="inputCity">Ville:</label>
+                    <input type="text" placeholder="ville" id="inputCity" name="city">
+                </li>
 
             </ol>
 
 
         </fieldset>
-    </form>
-    <form>
+
+
         <fieldset class="pink">
             <legend class="pink">Adresse de livraison</legend>
             <ol>
                 <li>Type de carte bancaire:</li>
-                <input type="radio" id="VISA">
-                <label for="VISA">VISA</label>
-                <div></div><input type="radio" id="Mastercard"></div>
-                <label for="Master">Mastercard</label>
-                <li>Numéro de carte:<input type="text" placeholder="Numéro de carte"></li>
-                <li>Code de securité:<input type="text" placeholder="Code de securité"></li>
-                <li>Nom du titulaire:<input type="text" placeholder="Nom du titulaire"></li>
+                <div>
+                    <input type="radio" id="VISA" name="creditCard">
+                    <label for="VISA">VISA</label>
+                </div>
+                <div>
+                    <input type="radio" id="Mastercard" name="creditCard">
+                    <label for="Mastercard">Mastercard</label>
+                </div>
+                <li>
+                    <label for="cardNumber">Numéro de carte:</label>
+                    <input type="password" placeholder="Numéro de carte" id="cardNumber" name="cardNumber">
+                </li>
+                <li>
+                    <label for="securityCode">Code de securité:</label>
+                    <input type="password" placeholder="Code de securité" id="securityCode" name="securityCode">
+                </li>
+                <li>
+                    <label for="username">Nom du titulaire:</label>
+                    <input type="text" placeholder="Nom du titulaire" id="username" name="username">
+                </li>
 
 
             </ol>
 
 
         </fieldset>
+        <input type="submit" value="j'achète !">
+
     </form>
-    <input type="submit" value="j'achète !">
 </body>
 
 </html>
+<!-- yes bojeu-->
